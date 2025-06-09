@@ -44,17 +44,11 @@ cd seu-repositorio
 2. Configurar variáveis de ambiente
 Crie um arquivo .env com as configurações necessárias, por exemplo:
 
-env
-Copy
-Edit
 SECRET_KEY=chave_secreta_segura
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 DATABASE_URL=sqlite:///./database.db
 3. Executar com Docker
-bash
-Copy
-Edit
 docker compose up --build
 Acesse em: http://localhost:8000/docs
 
@@ -66,9 +60,6 @@ ReDoc: http://localhost:8000/redoc
 🔐 Autenticação
 A API utiliza autenticação baseada em JWT. Após o login, use o token recebido nas requisições:
 
-http
-Copy
-Edit
 Authorization: Bearer <seu_token>
 ✏️ Funcionalidades
 ✅ Registro e login de usuários
@@ -86,9 +77,7 @@ Authorization: Bearer <seu_token>
 ✅ Containerização com Docker
 
 🧪 Rodar os testes
-bash
-Copy
-Edit
+
 pytest
 A cobertura de testes será gerada em htmlcov/ se configurada com pytest-cov.
 
@@ -132,9 +121,6 @@ CMD ["uvicorn", "fast_zero.app:app", "--host", "0.0.0.0", "--port", "8000"]
 docker-compose.yml
 Define os serviços (ex: app e banco de dados):
 
-yaml
-Copy
-Edit
 version: '3.9'
 services:
   app:
@@ -145,5 +131,6 @@ services:
       - .env
     volumes:
       - .:/app
+
 📄 Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
