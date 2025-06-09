@@ -31,11 +31,6 @@ tests/ # Testes com pytest
 Dockerfile # Dockerização do projeto
 compose.yaml # Compose para ambiente com banco
 .env # Variáveis de ambiente
-
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ Como Executar
