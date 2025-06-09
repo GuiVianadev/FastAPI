@@ -14,7 +14,7 @@ Este é um projeto de API REST para gerenciamento de tarefas, desenvolvido com *
 - **GitHub Actions** – Integração contínua
 
 ---
-
+```
 ## 📁 Estrutura do Projeto
 
 fast_zero/
@@ -32,6 +32,7 @@ Dockerfile # Dockerização do projeto
 compose.yaml # Compose para ambiente com banco
 .env # Variáveis de ambiente
 ---
+```
 
 ## ⚙️ Como Executar
 
